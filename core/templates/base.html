@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% comment %} <title>Amar Bank</title> {% endcomment %}
+    <title>
+        {% block head_title %}Banking System{% endblock %}
+    </title>
+    {% comment %} {% block title %}  {% endblock  %} {% endcomment %}
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.0.1/dist/tailwind.min.css">
+</head>
+<body class="bg-indigo-600">
+    {% include "navbar.html" %}
+    <div>
+        {% block body %}
+        
+        {% endblock  %}
+
+    </div>
+    {% include "footer.html" %}
+</body>
+
+</html>
